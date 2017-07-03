@@ -1,5 +1,4 @@
 package com.Milagepergallon;
-
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;
@@ -10,7 +9,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -74,7 +72,7 @@ public class Milagecalculator extends JFrame {
 				
 				
 				try{
-				
+				//connection to database
 				Connection connection;
 				PreparedStatement ps;
 				connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/car?autoReconnect=true&useSSL=false","root","root");
@@ -91,10 +89,7 @@ public class Milagecalculator extends JFrame {
 				{
 					
 				}
-				
-				
-				
-				
+							
 				float gallon=0;
 				float miles=0;
 				float mpg;
@@ -103,18 +98,13 @@ public class Milagecalculator extends JFrame {
 				gallon= Float.parseFloat(Gallons.getText());
 				miles= Float.parseFloat(Miles.getText());
 				mpg=miles/gallon;
-				textField.setText(Float.toString(mpg));
-				
-				
-				
-				
+				textField.setText(Float.toString(mpg));				
 			}
 		});
+		//components
 		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 20));
 		btnNewButton.setBounds(421, 362, 169, 40);
-		
 		contentPane.add(btnNewButton);
-		
 		textField = new JTextField();
 		textField.setEditable(false);
 		textField.setForeground(Color.RED);
