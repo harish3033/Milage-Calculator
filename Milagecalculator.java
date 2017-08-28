@@ -1,3 +1,8 @@
+/*
+ * This is the application where customers can calculate their milage of the vehicle
+ */
+
+
 package com.Milagepergallon;
 import java.awt.Color;
 import java.awt.EventQueue;
