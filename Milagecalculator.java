@@ -48,7 +48,7 @@ public class Milagecalculator extends JFrame {
 	}
 
 	/**
-	 * Create the frame.
+	 * Creating the frame and developing the components.
 	 */
 	public Milagecalculator() {
 		setTitle("Milage Calculator");
